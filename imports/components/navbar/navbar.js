@@ -14,6 +14,9 @@ class navbarController{
      location: '/logo.png',
      alternatetext: 'logo'
    }
+   console.log();
+   $scope.userId = Meteor.userId();
+   console.log($scope.user);
   }
 }
 

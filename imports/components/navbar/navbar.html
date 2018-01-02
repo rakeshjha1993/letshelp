@@ -14,15 +14,14 @@
                     <ul class="nav navbar-nav">
 
                         <li ng-repeat="menu in menus"><a href="{{menu.link}}" class=""> {{menu.title}} </a></li>
-
-                        <!-- <li class=" down"><a href="#" class="dropdown-toggle active" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">HR <span class="caret"></span></a>
+                        <li class=" down" ng-hide="!userId"><a href="#" class="dropdown-toggle active" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">HR <span class="caret"></span></a>
                             <ul class="dropdown-menu">
-                                <li><a href="#">Change Time Entry</a></li>
+                                <li><a href="#">{{user.username}}</a></li>
                                 <li><a href="#">Report</a></li>
+
                             </ul>
-                        </li> -->
+                        </li>
                     </ul>
-                    
                 </div>
             </div>
         </nav>
